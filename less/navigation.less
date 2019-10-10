@@ -3,9 +3,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.7rem;
+
+     @media @mobile {
+         flex-direction: column;
+         }
+
+        .logo {
+            padding-left: 0;
+        }
+
+            @media @mobile {
+                padding-bottom: 1rem;
+            }
 
         nav a {
             padding: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: grey; 
         }
+
+            nav a:last-child {
+                padding-right: 0;
+            }
 }
